@@ -1,5 +1,5 @@
 import { WaitlistForm } from "@/components/WaitlistForm";
-import leafLogo from "@/assets/leaf-logo.jpg";
+import leafLogo from "@/assets/leaf-logo.png";
 
 const Index = () => {
   return (
@@ -11,8 +11,7 @@ const Index = () => {
             <img 
               src={leafLogo} 
               alt="CampFlow Logo" 
-              className="w-24 h-24 sm:w-32 sm:h-32 brightness-0 invert"
-              style={{ filter: 'brightness(0) saturate(100%) invert(77%) sepia(26%) saturate(926%) hue-rotate(358deg) brightness(93%) contrast(89%)' }}
+              className="w-24 h-24 sm:w-32 sm:h-32"
             />
           </div>
           
