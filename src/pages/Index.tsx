@@ -1,5 +1,5 @@
 import { WaitlistForm } from "@/components/WaitlistForm";
-import { Leaf } from "lucide-react";
+import leafLogo from "@/assets/leaf-logo.jpg";
 
 const Index = () => {
   return (
@@ -8,7 +8,12 @@ const Index = () => {
         {/* Logo and Brand */}
         <div className="space-y-8 opacity-0 animate-slide-up">
           <div className="flex items-center justify-center gap-4">
-            <Leaf className="w-24 h-24 sm:w-32 sm:h-32 text-primary" strokeWidth={1.5} />
+            <img 
+              src={leafLogo} 
+              alt="CampFlow Logo" 
+              className="w-24 h-24 sm:w-32 sm:h-32 brightness-0 invert"
+              style={{ filter: 'brightness(0) saturate(100%) invert(77%) sepia(26%) saturate(926%) hue-rotate(358deg) brightness(93%) contrast(89%)' }}
+            />
           </div>
           
           <div className="space-y-4">
