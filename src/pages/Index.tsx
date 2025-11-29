@@ -8,13 +8,11 @@ const Index = () => {
         {/* Logo and Brand */}
         <div className="space-y-8 opacity-0 animate-slide-up">
           <div className="flex items-center justify-center gap-4">
-            <div className="bg-background rounded-lg p-2">
-              <img 
-                src={leafLogo} 
-                alt="CampFlow Logo" 
-                className="w-24 h-24 sm:w-32 sm:h-32"
-              />
-            </div>
+            <img 
+              src={leafLogo} 
+              alt="CampFlow Logo" 
+              className="w-24 h-24 sm:w-32 sm:h-32"
+            />
           </div>
           
           <div className="space-y-4">
