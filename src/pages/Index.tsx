@@ -1,5 +1,5 @@
 import { WaitlistForm } from "@/components/WaitlistForm";
-import campflowLogo from "@/assets/campflow-logo.png";
+import { Leaf } from "lucide-react";
 
 const Index = () => {
   return (
@@ -8,11 +8,7 @@ const Index = () => {
         {/* Logo and Brand */}
         <div className="space-y-8 opacity-0 animate-slide-up">
           <div className="flex items-center justify-center gap-4">
-            <img 
-              src={campflowLogo} 
-              alt="CampFlow Logo" 
-              className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
-            />
+            <Leaf className="w-24 h-24 sm:w-32 sm:h-32 text-primary" strokeWidth={1.5} />
           </div>
           
           <div className="space-y-4">
@@ -20,7 +16,7 @@ const Index = () => {
               CampFlow
             </h1>
             <p className="text-xl sm:text-2xl text-foreground/90 font-medium">
-              Streamline your camping adventures
+              Optimiza tus aventuras de camping
             </p>
           </div>
         </div>
@@ -28,22 +24,22 @@ const Index = () => {
         {/* Main Content */}
         <div className="space-y-8 opacity-0 animate-slide-up animate-delay-200">
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            The ultimate platform for managing your camping experiences. 
-            From planning to execution, we've got you covered.
+            La plataforma definitiva para gestionar tus experiencias de camping. 
+            Desde la planificación hasta la ejecución, te tenemos cubierto.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary"></div>
-              <span>Smart Planning</span>
+              <span>Planificación Inteligente</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary"></div>
-              <span>Real-time Updates</span>
+              <span>Actualizaciones en Tiempo Real</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary"></div>
-              <span>Community Driven</span>
+              <span>Impulsado por la Comunidad</span>
             </div>
           </div>
         </div>
@@ -56,7 +52,7 @@ const Index = () => {
         {/* Footer */}
         <footer className="pt-12 opacity-0 animate-fade-in animate-delay-400">
           <p className="text-sm text-muted-foreground">
-            Launching soon • Get early access by joining our waitlist
+            Próximamente • Obtén acceso anticipado uniéndote a nuestra lista de espera
           </p>
         </footer>
       </div>
