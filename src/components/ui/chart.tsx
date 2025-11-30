@@ -177,8 +177,8 @@ const ChartTooltipContent = React.forwardRef<
                   formatter(item.value, item.name, item, index, item.payload)
                 ) : (
                   <>
-                    {itemConfig?.icon ? (
-                      <itemConfig.icon />
+                    {itemConfig?n ? (
+                      <itemConfign />
                     ) : (
                       !hideIndicator && (
                         <div
@@ -255,8 +255,8 @@ const ChartLegendContent = React.forwardRef<
             key={item.value}
             className={cn("flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3 [&>svg]:text-muted-foreground")}
           >
-            {itemConfig?.icon && !hideIcon ? (
-              <itemConfig.icon />
+            {itemConfig?n && !hideIcon ? (
+              <itemConfign />
             ) : (
               <div
                 className="h-2 w-2 shrink-0 rounded-[2px]"
