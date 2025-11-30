@@ -9,9 +9,9 @@ export const WaitlistForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !email.includes("@")) {
       toast({
         title: "Email inválido",
@@ -20,6 +20,32 @@ export const WaitlistForm = () => {
       });
       return;
     }
+
+    try {
+      const res = await fetch("https://formspree.io/f/mpwvzdld", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        setIsSubmitted(true);
+        toast({
+          title: "¡Estás en la lista! 🎉",
+          description: "Te notificaremos cuando CampFlow se lance.",
+        });
+        setEmail("");
+      } else {
+        throw new Error("Error");
+      }
+    } catch (err) {
+      toast({
+        title: "Error al enviar",
+        description: "Intenta más tarde.",
+        variant: "destructive",
+      });
+    };
+
 
     // Here you would typically send to your backend/database
     console.log("Waitlist signup:", email);

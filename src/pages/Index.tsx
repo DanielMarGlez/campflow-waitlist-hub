@@ -20,7 +20,7 @@ const Index = () => {
               CampFlow
             </h1>
             <p className="text-xl sm:text-2xl text-foreground/90 font-medium">
-              Optimiza tus aventuras de camping
+              Optimiza la gestión de tus campamentos
             </p>
           </div>
         </div>
@@ -28,7 +28,7 @@ const Index = () => {
         {/* Main Content */}
         <div className="space-y-8 opacity-0 animate-slide-up animate-delay-200">
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            La plataforma definitiva para gestionar tus experiencias de camping. 
+            La plataforma definitiva para gestionar tus campamentos y viajes. 
             Desde la planificación hasta la ejecución, te tenemos cubierto.
           </p>
 
@@ -43,7 +43,7 @@ const Index = () => {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary"></div>
-              <span>Impulsado por la Comunidad</span>
+              <span>Diseñado para la utilidad</span>
             </div>
           </div>
         </div>
