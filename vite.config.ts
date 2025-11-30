@@ -3,9 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/",   // 👈 CAMBIA ESTO
+  base: "/", // correcto porque usas dominio propio campflow.es
   server: {
     host: "::",
     port: 8080,
@@ -15,5 +14,9 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  // 👇 IMPORTANTE PARA GITHUB PAGES
+  build: {
+    outDir: "docs",
   },
 }));
