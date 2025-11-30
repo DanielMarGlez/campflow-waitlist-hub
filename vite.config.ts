@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: "/",              // dominio propio = SIEMPRE "/"
+  base: "/",               // Para dominio personalizado como campflow.es
   plugins: [react()],
   resolve: {
     alias: {
@@ -11,6 +11,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "docs",       // GitHub Pages usa /docs
+    outDir: "docs",       // GitHub Pages usará esta carpeta
   },
 });
